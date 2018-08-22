@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Analysis Dashboard with Attitude</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+
+  <nav class="navbar navbar-default navbar-color1">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="logo" href="#">Latitude</a>
+      </div>
+
+      <div class="collapse navbar-collapse drop-color" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Plots
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="file:///C:/Users/mariam/Web_homework/temp.html">Max Temperature</a></li>
+              <li><a href="file:///C:/Users/mariam/Web_homework/humidity.html">Humidity</a></li>
+              <li><a href="file:///C:/Users/mariam/Web_homework/cloudiness.html">Cloudiness</a></li>
+              <li><a href="file:///C:/Users/mariam/Web_homework/wind-speed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="file:///C:/Users/mariam/Web_homework/comparison.html">Comparison<span class="sr-only">(current)</span></a></li>
+          <li><a href="file:///C:/Users/mariam/Web_homework/data.html">Data</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <main class="container-fluid">
+
+    <div class="row" id="main-section">
+      <section class="section-style col-md-7">
+        <div class="row">
+          <h1 class="title col-md-12">Summary: Latitude vs. X</h1>
+        </div>
+
+        <section id="figure">
+
+          <img id="index-image" style='float:left;width:300px;height:300px; margin-right:10px;' src="Resources\assets\images\Fig1.png"
+            alt="City Latitude vs. Max Temp">
+        </section>
+        <p class="text-style">The purpose of this project was to analyze how weather changes as you get closes to the equator.
+          To accomplish this analysis, we first pulled data vrom the OpenWeatherAPI to assemble a dataset on over 500 cities.
+        </p>
+        <p class="text-style">After assembling the dataset, we used Matlibplot to plot various aspects of the weather vs.
+          latitude. factors we looked at included: temperature, cloudiness, humidity, and windspeed. This site provides the
+          source data and visualizationscreated as part of analysis, as well as explanations and descriptions of any trends
+          and correlations witnessed. </p>
+      </section>
+      <div>
+
+        <div class="section-style col-md-4">
+
+          <div class="row">
+            <h1 class="title col-md-12">Visualizations</h1>
+          </div>
+          <div class="row">
+            <div class="col-xs-3 col-md-6">
+              <a href="file:///C:/Users/mariam/Web_homework/temp.html" class="thumbnail">
+                <img src="Resources\assets\images\Fig1.png" alt="City Latitude vs. Max Temperature">
+              </a>
+            </div>
+            <div class="col-xs-3 col-md-6">
+              <a href="file:///C:/Users/mariam/Web_homework/humidity.html" class="thumbnail">
+                <img src="Resources\assets\images\Fig2.png" alt="City Latitude vs. Humidity">
+              </a>
+            </div>
+            <div class="col-xs-3 col-md-6">
+              <a href="file:///C:/Users/mariam/Web_homework/cloudiness.html" class="thumbnail">
+                <img src="Resources\assets\images\Fig3.png" alt="City Latitude vs. Cloudiness">
+              </a>
+            </div>
+            <div class="col-xs-3 col-md-6">
+              <a href="file:///C:/Users/mariam/Web_homework/wind-speed.html" class="thumbnail">
+                <img src="Resources\assets\images\Fig4.png" alt="City Latitude vs. Wind Speed">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  </main>
+
+</body>
+
+</html>
